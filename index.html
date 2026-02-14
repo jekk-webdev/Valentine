@@ -1,0 +1,112 @@
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Valentine Kilaa❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="light">
+
+<audio id="bgmusic" src="./audio/music.mp3" loop></audio>
+
+<div class="top-controls">
+    <button onclick="toggleMode()">🌙 Mode</button>
+    <button onclick="toggleMode()">✨ Clean</button>
+</div>
+
+<div class="progress-bar">
+    <div class="progress-fill"></div>
+</div>
+
+<section class="page active" id="page1">
+    <div class="parallax"></div>
+    <div class="content fade">
+        <img src="./foto1zk.jpeg" class="main-photo">
+        <h1>Happy Valentine Kilaa❤️</h1>
+        <button onclick="playMusic()">🎵 Play Music</button>
+        <button onclick="prevPage()">⬅️ Back</button>
+        <button onclick="goNext()">Next ➡️</button>
+    </div>
+</section>
+
+<section class="page" id="page2">
+    <div class="content fade">
+        <h2 id="typing"></h2>
+        <div class="heart">❤️</div>
+        <button onclick="showMessage()">Tampilkan Pesan</button>
+        <button onclick="goBack()">⬅️ Back</button>
+        <button onclick="goNext()">Next ➡️</button>
+    </div>
+</section>
+
+<section class="page" id="page3">
+    <div class="content fade">
+        <h3 id="countdown"></h3>
+        <div class="envelope" onclick="openEnvelope()">
+            <div class="letter">
+                <div class="letter-content" id="letterText">
+                    Semoga Kita Langgeng Terus Ya LEKKK 💖💖
+                </div>
+            </div>
+        </div>
+        <button onclick="goBack()">⬅️ Back</button>
+        <button onclick="goNext()">Next ➡️</button>
+    </div>
+</section>
+
+<section class="page" id="page4">
+    <div class="content fade">
+        <div class="flip-card">
+            <div class="flip-inner">
+                <div class="flip-front">
+                    <img src="./foto3zk.jpeg">
+                </div>
+                <div class="flip-back">
+                    <h2>Aku Sayang Kamu Lekk 💖</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button onclick="goBack()">⬅️ Back</button>
+    <button onclick="goNext()">Next ➡️</button>
+</section>
+
+<section class="page" id="page5">
+    <div class="content">
+        <h2>Kamu Sayang Aku Gak?? 😏</h2>
+        <button id="noBtn">NO 😋</button>
+        <button onclick="alert('Aku Juga Sayang Sama Kamu💖')">YES💖</button>
+        <h3 id="countdown"></h3>
+    </div>
+    <button onclick="goBack()">⬅️ Back</button>
+    <button onclick="goNext()">Next ➡️</button>
+</section>
+<section class="page" id="page6">
+    <div class="slideshow">
+        <img src="./foto4zk.jpeg" class="slide active">
+        <img src="./foto6zk.jpeg" class="slide">
+        <img src="./foto5zk.jpeg" class="slide">
+        <img src="./foto7zk.jpeg" class="slide">
+        <img src="./foto2zk.jpeg" class="slide">
+        <img src="./foto8zk.jpeg" class="slide">
+        <img src="./foto1zk.jpeg" class="slide">
+    </div>
+    <button onclick="goBack()">⬅️ Back</button>
+    <button onclick="goNext()">Next ➡️</button>
+</section>
+<section class="page" id="page7">
+    <button onclick="secretMessage()">Pesan Rahasia Wlee😆😋</button>
+    <button onclick="goBack()">⬅️ Back</button>
+    <button onclick="goNext()">Next ➡️</button>
+    <h2 id="secret"></h2>
+</section>
+<section class="page" id="page8">
+    <div class="ending">
+        <h1> Love You Always Kilaa💖</h1>
+    </div>
+</section>
+<div class="floating-hearts"></div>
+<div class="sparkles"></div>
+<script src="script.js"></script>
+</body>
+</html>
